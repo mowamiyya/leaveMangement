@@ -1,0 +1,51 @@
+# Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.classpath
+.project
+.settings/
+
+# Git
+.git/
+.gitignore
+
+# Frontend (not needed for backend build)
+frontend/
+
+# Documentation
+*.md
+DEPLOYMENT.md
+RENDER_QUICK_START.md
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.zip
+*.bak
+backup.zip
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Test files
+src/test/
+
+# Maven wrapper (we use Maven from the image)
+mvnw
+mvnw.cmd
+.mvn/wrapper/
