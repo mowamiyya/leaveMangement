@@ -6,7 +6,6 @@ import SearchInput from '../ui/search-input'
 import Pagination from '../ui/pagination'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogClose } from '../ui/dialog'
 import { Button } from '../ui/button'
-import { useAppSelector } from '../../store/hooks'
 
 interface Class {
   classId: string
@@ -39,8 +38,6 @@ const ClassTeachers = () => {
   const [formData, setFormData] = useState({ classId: '', teacherId: '' })
   const [currentPage, setCurrentPage] = useState(1)
   const [itemsPerPage, setItemsPerPage] = useState(10)
-  const { uiSettings } = useAppSelector((state) => state.settings)
-  const isDark = uiSettings.theme === 'dark'
   const hasFetchedRef = useRef(false)
 
   useEffect(() => {

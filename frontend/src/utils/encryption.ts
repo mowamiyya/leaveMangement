@@ -1,8 +1,6 @@
 // Simple encryption utility using Base64 encoding
 // Note: For production, use proper encryption libraries like crypto-js
 
-const ENCRYPTION_KEY = 'leave-management-secret-key-2024'
-
 export const encryptPayload = (data: any): string => {
   try {
     const jsonString = JSON.stringify(data)

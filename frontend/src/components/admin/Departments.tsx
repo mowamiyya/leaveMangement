@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo, useRef } from 'react'
 import axios from 'axios'
 import { toast } from 'react-toastify'
-import { Plus, Edit, Trash2, Building2, Search } from 'lucide-react'
+import { Plus, Edit, Trash2, Building2 } from 'lucide-react'
 import SearchInput from '../ui/search-input'
 import Pagination from '../ui/pagination'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogClose } from '../ui/dialog'

@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { useAppSelector } from '../store/hooks'
 import { User, Mail, Shield, Calendar, FileText, Clock, CheckCircle, XCircle } from 'lucide-react'
 import axios from 'axios'
-import { toast } from 'react-toastify'
 
 interface DashboardStats {
   totalLeaves: number

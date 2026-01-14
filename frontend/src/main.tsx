@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import { store } from './store/store'
 import App from './App.tsx'
 import './index.css'
+import './config/api' // Import API config first to set axios baseURL
 import './utils/axiosInterceptor'
 
 // Apply theme immediately before React renders to prevent flash

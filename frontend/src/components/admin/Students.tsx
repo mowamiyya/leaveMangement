@@ -7,7 +7,6 @@ import SearchInput from '../ui/search-input'
 import Pagination from '../ui/pagination'
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogClose } from '../ui/dialog'
 import { Button } from '../ui/button'
-import { useAppSelector } from '../../store/hooks'
 
 interface Student {
   studentId: string
@@ -44,8 +43,6 @@ const Students = () => {
   const [showDetailDialog, setShowDetailDialog] = useState(false)
   const [auditLogs, setAuditLogs] = useState<AuditLog[]>([])
   const [loadingAudit, setLoadingAudit] = useState(false)
-  const { uiSettings } = useAppSelector((state) => state.settings)
-  const isDark = uiSettings.theme === 'dark'
   const hasFetchedRef = useRef(false)
 
   useEffect(() => {

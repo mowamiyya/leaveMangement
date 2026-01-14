@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Building2, GraduationCap, Users, UserCheck, TrendingUp, Activity, BookOpen, UserCog } from 'lucide-react'
+import { Building2, GraduationCap, UserCheck, TrendingUp, Activity, BookOpen, UserCog } from 'lucide-react'
 import { useAppDispatch, useAppSelector } from '../../store/hooks'
 import { fetchDashboardStatsAsync } from '../../store/slices/dashboardSlice'
 import Loader from '../Loader'

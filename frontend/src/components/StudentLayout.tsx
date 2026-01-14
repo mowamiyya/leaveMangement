@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
 import { logout } from '../store/slices/authSlice'
-import { LayoutDashboard, FileText, History, Network, User, Settings, LogOut } from 'lucide-react'
+import { LayoutDashboard, History, Network, User, Settings, LogOut } from 'lucide-react'
 
 interface StudentLayoutProps {
   children: React.ReactNode
